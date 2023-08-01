@@ -1,0 +1,21 @@
+server:
+  port: 19001
+
+spring:
+  application:
+    name: consumer-service
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+      config:
+        server-addr: 127.0.0.1:8848
+        file-extension: yaml
+
+logging:
+  level:
+    org.springframework.web: ERROR
+    com.example.demo: DEBUG
+
+swagger:
+  enable: true
